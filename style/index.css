@@ -1,69 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Orbitron&family=Poppins:ital,wght@0,200;1,100&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Orbitron&family=Poppins:ital,wght@0,200;1,100&family=Roboto:wght@300&display=swap");
 
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("../retro-living-room.jpeg");
+  background-size: cover;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.Logo {
+  line-height: 35px;
+  margin-left: 8%;
+}
 
-}
-body{
-    background-image: url("../retro-living-room.jpeg");
- background-size: cover;
-}
-.Navbar{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-}
-.Logo{
-    line-height: 35px;
-    margin-left: 8%;
-}
-
-.List-holder{
-    width: 49%;
+.List-holder {
+  width: 49%;
 }
 
 .list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.list-items{
-    list-style: none;
+.list-items {
+  list-style: none;
 }
-.list-items> a {
-    color: #ffffff;
-    text-decoration: none;
+.list-items > a {
+  color: #ffffff;
+  text-decoration: none;
 }
-.Content{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 600px;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-template-areas:
-        " Text Text Designtop"
-        "Button Designbottom Designbottom";
-    justify-items: center;
-
+.Content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas:
+    " Text Text Designtop"
+    "Button Designbottom Designbottom";
+  justify-items: center;
 }
-.Content-text{
-    grid-area: Text;
+.Content-text {
+  grid-area: Text;
 }
-.Content-text > h1{
-    color: white;
-    font-size: 80px;
+.Content-text > h1 {
+  color: white;
+  font-size: 80px;
 }
-.Content-button{
-    grid-area: Button;
+.Content-button {
+  grid-area: Button;
 }
 
-.Design-top{
-    grid-area: Designtop;
+.Design-top {
+  grid-area: Designtop;
 }
-.Design-bottom{
-    grid-area: Designbottom;
+.Design-bottom {
+  grid-area: Designbottom;
+}
+.puzzle-logo {
+  background-color: #ffffff8f;
+  width: 400px;
+  border-radius: 40px;
+  padding: 20px;
+}
+.light-logo {
+  background-color: #ffffff8f;
+  width: 400px;
+  border-radius: 40px;
+  padding: 20px;
+}
+.puzzle-logo > p {
+  color: white;
+  font-size: 20px;
+}
+
+.light-logo > P {
+  color: white;
+  font-size: 20px;
+}
+
+.Content-button > button {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 40px;
+  width: 250px;
 }
